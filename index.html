@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Kurre Poojitha Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+        <img src="images/logo.png" class="logo"> <ul>
+        <li><a href="#header">Home</a></li> 
+        <li><a href="#about">About</a></li> 
+        <li><a href="#portfolio">Projects</a></li> 
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+        <div class="header-text">
+            <!-- <p>UI/UX Designer</p> -->
+            <h1>Hi, I'm <span> Kurre Poojitha</span><br> From India</h1>
+        </div>
+        </div>
+        </div>
+
+        <!-- ------------about----- -->
+        <div id="about">
+            <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div> 
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Professional with experience in developing and documenting business requirements, analyzing existing processes,
+                and creating data visualizations achieved through fostering cross-functional collaboration. 
+                Skilled in QA Manual and Automation testing, proficient in implementing QA processes and 
+                writing test scripts for web-based applications.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p> 
+                    <p class="tab-links" onclick="opentab('education')">Education</p> 
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Leadership</span><br>Agile and Scrum</li>
+                        <li><span>Business Analytics</span><br>Documentation, Problem solving</li>
+                        <li><span>Data Analytics</span><br>Data Vizualization, Data Analysis</li>
+                        <li><span>QA Manual</span><br>UI, API, Database Testing</li>
+                        <li><span>QA Automation</span><br>Automating web-based application testing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - 2023</span><br>Scrum Master</li>
+                        <li><span>2019 - 2021</span><br>Business Analyst and Implementation Consultant</li>
+                        <li><span>2017 - 2019</span><br>Quality Assurance analyst</li>
+                      
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-2024</span><br>Master's in MIS from SUNY-UNIVERSITY AT BUFFALO,NEW YORK</li>
+                        <li><span>2013-2017</span><br>Bachelor's in Computer Science from AMRITA VISHWA VIDYAPEETHAM,KERALA</li>
+                     
+                    </ul>
+                </div>
+
+            </div>
+            </div>
+            </div>
+            </div>
+<!----------------projects---->
+<div id="portfolio">
+    <div class="container">
+    <h1 class="sub-title">My Projects</h1> 
+        <div class="work-list">
+            <div class="work">
+                I<img src="images/work-1.png">
+                <div class="layer">
+                    <h3>British Airways Analysis</h3>
+                    <p>This project reviews different aircrafts of British airways 
+                    with different metrics like entertainment,food and beverages, cabin staff services
+                    accross differnt months, continents and passenger types.</p>
+                    <a href="https://public.tableau.com/views/BritishAirways_Analysis/Dashboard1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                I<img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Bookstore Analysis</h3>
+                    <p>This project provides insights for sales manager, 
+                    aspiring authers, publishers in the literature world 
+                    for enhancing their understanding of market trends, consumer preferences,
+                    and effective publishing strategies.</p>
+                    <a href="https://public.tableau.com/views/Bookshop_analysis/Authorswithawards?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+    </div>
+<!-- -------contact---- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i>poojithakurre1407@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+1(716)2382247</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kurrepoojitha"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/padma.puja.5?mibextid=LQQJ4d"><i class="fa-brands fa-facebook-f"></i></a>
+                <!-- <a href="https://www.linkedin.com/in/kurrepoojitha"><i class="fa-brands fa-instagram"></i></a> -->
+            </div>
+            <a href="images/RESUMEKP.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
